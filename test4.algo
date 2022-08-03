@@ -1,0 +1,14 @@
+ALGORITHM tri_par_insertion
+VAR
+    set_declarations
+BEGIN
+   FOR i FROM 1 TO t.length-2 STEP 1  DO
+   j:=i
+   WHILE (t[j]<t[j-1]) DO
+    aux:=t[j]
+    t[j]:=t[j-1]
+    t[j-1]:=aux
+   END_WHILE
+    
+   END_FOR
+END
